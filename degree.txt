@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+double celsiusToFahrenheit(double celsius) {
+    return (celsius * 9 / 5) + 32;
+}
+
+double celsiusToKelvin(double celsius) {
+    return celsius + 273.15;
+}
+
+int main() {
+    double celsius = 25.0;
+    double fahrenheit = celsiusToFahrenheit(celsius);
+    double kelvin = celsiusToKelvin(celsius);
+    printf("%.2f %.2f\n", fahrenheit, kelvin);
+    return 0;
+}
