@@ -1,0 +1,20 @@
+#include<stdio.h>
+int length(char str[10]);
+int main()
+{
+    char str[10];
+    int len;
+    printf("\nEnter a string: \n");
+    gets(str);
+    len=length(str);
+    printf("\nThe length of string is : %d",len);
+}
+int length(char str[10])
+{
+    int i,count=0;
+    for(i=0;str[i]!='\0';i++)
+    {
+        count++;
+    }
+    return count;
+}
