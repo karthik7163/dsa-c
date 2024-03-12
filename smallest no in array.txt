@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+
+int findSmallest(int arr[], int size) {
+    int smallest = arr[0]; // Assume the first element is the smallest
+    for (int i = 1; i < size; i++) {
+        if (arr[i] < smallest) {
+            smallest = arr[i];
+        }
+    }
+    return smallest;
+}
+
+int main() {
+    int arr[] = {10, 20, 4, 45, 99}; // Example array
+    int size = sizeof(arr) / sizeof(arr[0]); // Calculate the size of the array
+    int smallest = findSmallest(arr, size); // Call the function to find the smallest number
+    printf("The smallest number in the array is: %d\n", smallest);
+    return 0;
+}
